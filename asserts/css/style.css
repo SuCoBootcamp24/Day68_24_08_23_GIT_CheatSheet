@@ -25,13 +25,17 @@
   /** ---- BASIC ---- */
 
 h1 {
+    width: 400px;
+
     font-family: Vollkorn;
-    font-size: 7rem;
+    font-size: 9rem;
+    text-align: center;
+
 }
 
 h2 {
     font-family: SourceCode;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -56,5 +60,156 @@ p {
     font-size: 1.5rem;
 }
 
-/** ------Main------ */
+/** ------header------ */
 
+header {
+    border: solid red;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "circle1 . . . ."
+      ". branch . logs ."
+      ". logo logo logo ."
+      "circle2 logo logo logo circle3"
+      ". logo logo logo ."
+      ". . . merche ."
+      ". status . . circle4"; 
+
+      height: 100vh;
+      width: 1000px;
+  }
+
+
+  .branch {
+     grid-area: branch; 
+}
+
+  .logs { 
+    grid-area: logs; 
+}
+
+  .merche { 
+    grid-area: merche; 
+}
+
+  .status { 
+    grid-area: status; 
+}
+
+  .circle1 { 
+    grid-area: circle1; 
+}
+
+  .circle2 { 
+    grid-area: circle2; 
+}
+
+  .circle3 { 
+    grid-area: circle3; 
+}
+
+  .circle4 { 
+    grid-area: circle4; 
+}
+
+
+
+
+  .logo { 
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid black;
+  
+
+    height: 100%;
+    width: 100%;
+}
+
+.logo h1 {
+    
+}
+
+
+
+.rings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 3px solid peachpuff;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.rings-in {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+
+/* ring 1 */
+.rings:nth-of-type(1) {
+    top: -40px;
+    left: -40px;
+
+    border-color: rgb(5, 7, 158);
+    background-color: rgb(21, 25, 250);
+
+}
+
+.rings:nth-of-type(1) .rings-in {
+    background-color: rgb(187, 209, 248);
+}
+
+
+/* ring 2 */
+.rings:nth-of-type(2) {
+    top: -40px;
+    right: -40px;
+
+    border-color: rgb(131, 2, 2);
+    background-color: rgb(203, 2, 2);
+
+}
+
+.rings:nth-of-type(2) .rings-in {
+    background-color: rgb(245, 183, 183);
+}
+
+
+/* ring 3 */
+.rings:nth-of-type(3) {
+    bottom: -40px;
+    right: -40px;
+
+    border-color: rgb(51, 0, 106);
+    background-color: rgb(132, 26, 245);
+
+}
+
+.rings:nth-of-type(3) .rings-in {
+    background-color: rgb(221, 193, 251);
+}
+
+
+/* ring 4 */
+.rings:nth-of-type(4) {
+    bottom: -40px;
+    left: -40px;
+
+    border-color: rgb(133, 91, 0);
+    background-color: rgb(245, 168, 1);
+
+}
+
+.rings:nth-of-type(4) .rings-in {
+    background-color:rgb(251, 233, 192);
+}
