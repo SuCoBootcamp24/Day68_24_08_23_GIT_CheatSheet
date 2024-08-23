@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asserts/css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="rings rOut"></div>
+            <div class="rings rIn"></div>
+            <div class="rings rOut"></div>
+            <div class="rings rIn"></div>
+            <div class="rings rOut"></div>
+            <div class="rings rIn"></div>
+            <div class="rings rOut"></div>
+            <h1>GIT CHEAT SHEET</h1>
+            <h2>$ git branch</h2>
+            <h2>$ git logs</h2>
+            <h2>$ git merge</h2>
+            <h2>$ git status</h2>
+        </section>
+    </header>
+    <main>
+
+        <section class="m1">
+            <section class="m1s1">
+                <h3>SETUP & INIT</h3>
+                <h4>Configuring user information, initializing and cloning repositories.</h4>
+
+                <article class="m1s1a1">
+                    <div>
+                    <h5>$ git init</h5>
+                    </div>
+                    <div>
+                        <p>Initialize an existing directory as a Git repository.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/init.png" alt="git init">
+                    </div>
+                </article>
+                
+                <article class="m1s1a2">
+                    <div>
+                    <h5>$ git clone [url]</h5>
+                    </div>
+                    <div>
+                        <p>Retrieve an entire repository from a hosted location via URL.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/clone.png" alt="git clone">
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="m1s2">
+                <h3>STAGE & SNAPSHOT</h3>
+                <h4>Working with snapshots and the Git staging area.</h4>
+
+                <article class="m1s1a1">
+                    <div>
+                    <h5>$ git status</h5>
+                    </div>
+                    <div>
+                        <p>Show modified files in working directory, staged for your next commit.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/status.png" alt="git status">
+                    </div>
+                </article>
+                
+                <article class="m1s1a2">
+                    <div>
+                    <h5>$ git add [file]</h5>
+                    </div>
+                    <div>
+                        <p>Add a file as it looks now to your next commit (stage).</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/add.png" alt="git add">
+                    </div>
+                </article>
+                
+            </section>
+        </section>
+
+
+        <section class="m2">
+            <section class="m2s1">
+
+                <article class="m2s1a1">
+                    <div>
+                    <h5>$ git reset [file]</h5>
+                    </div>
+                    <div>
+                        <p>Unstage a file while retaining the changes in working directory.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/reset.png" alt="git reset">
+                    </div>
+                </article>
+                
+                <article class="m2s1a2">
+                    <div>
+                    <h5>$ git diff</h5>
+                    </div>
+                    <div>
+                        <p>Diff of what is changed but not staged</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/diff.png" alt="git diff">
+                    </div>
+                </article>
+
+                <article class="m2s1a3">
+                    <div>
+                    <h5>git diff --staged</h5>
+                    </div>
+                    <div>
+                        <p>Diff of what is staged but not yet commited.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/diff--staged.png" alt="git diff --staged">
+                    </div>
+                </article>
+            </section>
+
+
+            <section class="m2s2">
+                <article class="m2s2a1">
+                    <div>
+                        <h5>$ git commit -m “[descr. message]”</h5>
+                    </div>
+                    <div>
+                        <p>Commit your staged content as a new commit snapshot.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/commit.png" alt="git commit">
+                    </div>
+                </article>
+
+                <article class="m2s2a2">
+                    <h3>---------------------------</h3>
+                    <h3>BRANCH & MERGE</h3>
+                    <h4>Isolating work in branches, changing context, and integrating changes.</h4>
+                </article>
+
+                <article class="m2s2a3">
+                    <div>
+                        <h5>$ git branch</h5>
+                    </div>
+                    <div>
+                        <p>List your branches. A * will appear next to the currently active branch.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/branch.png" alt="git branch">
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+        <section class="m3">
+            <section class="m3s1">
+                <article class="m3s1a1">
+                    <div>
+                        <h5>$ git branch [branch-name]</h5>
+                        </div>
+                        <div>
+                            <p>Create a new branch at the current commit.</p>
+                        </div>
+                        <div>
+                            <img src="./asserts/img/branch.png" alt="git branch">
+                        </div>
+                </article>
+                
+                <article class="m3s1a2">
+                    <div>
+                        <h5>$ git checkout [branch-name]</h5>
+                        </div>
+                        <div>
+                            <p>Switch to another branch and check it out into your working directory. If the Branch non exist, include Checkout "git branch" </p>
+                        </div>
+                        <div>
+                            <img src="./asserts/img/checkout.png" alt="git checkout">
+                        </div>
+                </article>
+
+            </section>
+
+            <section class="m3s2">
+                <article class="m3s2a1">
+                    <div>
+                    <h5>$ git merge [branch]</h5>
+                    </div>
+                    <div>
+                        <p>Merge the specified branch's history into the current one.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/merge.png" alt="git merge">
+                    </div>
+                </article>
+                
+                <article class="m3s2a2">
+                    <div>
+                    <h5>$ git log</h5>
+                    </div>
+                    <div>
+                        <p>Add a file as it looks now to your next commit (stage).</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/log.png" alt="git log">
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+        <section class="m4">
+                <section class="m4s1">
+                    <h3>TRACKING PATH CHANGES</h3>
+                    <h4>Versioning file removes and path changes.</h4>
+    
+                    <article class="m4s1a1">
+                        <div>
+                        <h5>$ git log --stat -M</h5>
+                        </div>
+                        <div>
+                            <p>Show all commit logs with indication of any paths that moved.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="m4s1a2">
+                        <div>
+                            <h5>$ git rm [file]</h5>
+                            </div>
+                            <div>
+                                <p>Delete the file from the project and stage the removal for commit.</p>
+                            </div>
+                            <div>
+                                <img src="./asserts/img/mv.png" alt="git mv">
+                            </div>
+                    </article>
+                </section>
+
+                <section class="m4s2">
+                    <h3>---------------------------</h3>
+                    <h3>IGNORING PATTERNS</h3>
+                    <h4>Preventing unintentional staging or commiting of files.</h4>
+
+                    <article class="m4s2a1">
+                        <div>
+                            <h5>.gitignore</h5>
+                        </div>
+                        <div>
+                            <p>logs/
+                                *.notes
+                                pattern*/
+                            </p>
+                            <p>Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</p>
+                        </div>
+                        <div>
+                            <img src="./asserts/img/gitignore.png" alt="gitignore file">
+                        </div>
+                    </article>
+
+                    <article class="m4s2a2">
+                        <div>
+                        <h5>$ git config --global core.excludesfile [file]</h5>
+                        </div>
+                        <div>
+                            <p>System wide ignore pattern for all local repositories</p>
+                        </div>
+                    </article>
+                </section>
+        </section>
+        
+        
+        <section class="m5">
+            <section class="m5s1">
+                <h3>SHARE & UPDATE</h3>
+                <h4>Retrieving updates from another repository and updating local repos.</h4>
+
+                <article class="m5s1a1">
+                    <div>
+                    <h5>$ git remote add [alias] [url]</h5>
+                    </div>
+                    <div>
+                        <p>Add a git URL as an alias.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/init.png" alt="git init">
+                    </div>
+                </article>
+                
+                <article class="m5s1a2">
+                    <div>
+                    <h5>$ git fetch [alias]</h5>
+                    </div>
+                    <div>
+                        <p>Fetch down all the branches from that Git remote.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/clone.png" alt="git clone">
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="m5s2">
+            
+                <article class="m5s2a1">
+                    <div>
+                    <h5>$ git merge [alias]/[branch]</h5>
+                    </div>
+                    <div>
+                        <p>Merge a remote branch into your current branch to bring it up to date.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/init.png" alt="git init">
+                    </div>
+                </article>
+                
+                <article class="m5s2a2">
+                    <div>
+                    <h5>$ git fetch [alias]</h5>
+                    </div>
+                    <div>
+                        <p>Fetch down all the branches from that Git remote.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/clone.png" alt="git clone">
+                    </div>
+                </article>
+
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
