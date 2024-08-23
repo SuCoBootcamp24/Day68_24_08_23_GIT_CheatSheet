@@ -292,7 +292,7 @@
                         <p>Add a git URL as an alias.</p>
                     </div>
                     <div>
-                        <img src="./asserts/img/init.png" alt="git init">
+                        <img src="./asserts/img/remote-add.png" alt="git remote add">
                     </div>
                 </article>
                 
@@ -304,7 +304,7 @@
                         <p>Fetch down all the branches from that Git remote.</p>
                     </div>
                     <div>
-                        <img src="./asserts/img/clone.png" alt="git clone">
+                        <img src="./asserts/img/fetch.png" alt="git fetch">
                     </div>
                 </article>
 
@@ -320,23 +320,131 @@
                         <p>Merge a remote branch into your current branch to bring it up to date.</p>
                     </div>
                     <div>
-                        <img src="./asserts/img/init.png" alt="git init">
+                        <img src="./asserts/img/merge-2.png" alt="git merge">
                     </div>
                 </article>
                 
                 <article class="m5s2a2">
                     <div>
-                    <h5>$ git fetch [alias]</h5>
+                    <h5>$ git push [alias] [branch]</h5>
                     </div>
                     <div>
-                        <p>Fetch down all the branches from that Git remote.</p>
+                        <p>Transmit local branch commits to the remote repository branch.</p>
                     </div>
                     <div>
-                        <img src="./asserts/img/clone.png" alt="git clone">
+                        <img src="./asserts/img/push.png" alt="git push">
                     </div>
                 </article>
 
             </section>
+        </section>
+
+
+        <section class="m6">
+            <section class="m6s1">
+                <article class="m6s1a1">
+                    <div>
+                    <h5>$ git pull</h5>
+                    </div>
+                    <div>
+                        <p>It is a shortcut to fetch and merge any commits from the tracking remote branch.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/pull.png" alt="git pull">
+                    </div>
+                </article>
+
+                <article class="m6s1a2">
+                    <h3>---------------------------</h3>
+                    <h3>REWRITE HISTORY</h3>
+                    <h4>Rewriting branches, updating commits and clearing history.</h4>
+                </article>
+                
+                <article class="m6s1a3">
+                    <div>
+                    <h5>$ git rebase [branch]</h5>
+                    </div>
+                    <div>
+                        <p>Apply any commits of the current branch ahead of specified one.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/rebase.png" alt="git rebase">
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="m6s2">
+                <article class="m6s2a1">
+                    <div>
+                    <h5>$ git reset --hard [commit]</h5>
+                    </div>
+                    <div>
+                        <p>Clear staging area, rewrite working tree from specified commit.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/reset-hard.png" alt="git reset --hard">
+                    </div>
+                </article>
+
+                <article class="m6s1a2">
+                    <h3>---------------------------</h3>
+                    <h3>TEMPORARY COMMITS</h3>
+                    <h4>Temporarily store modified, tracked files in order to change branches.</h4>
+                </article>
+                
+                <article class="m6s1a3">
+                    <div>
+                    <h5>$ git stash</h5>
+                    </div>
+                    <div>
+                        <p>Save modified and staged changes.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/stash1.png" alt="git stash">
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="m7">
+            <section class="m7s1">
+                <article class="m7s1a1">
+                    <div>
+                    <h5>$ git stash list</h5>
+                    </div>
+                    <div>
+                        <p>List stack-order of stashed file changes.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/stash2.png" alt="git stash list">
+                    </div>
+                </article>
+
+                <article class="m7s1a2">
+                    <div>
+                    <h5>$ git stash pop</h5>
+                    </div>
+                    <div>
+                        <p>Write working from the top of the stash stack.</p>
+                    </div>
+                    <div>
+                        <img src="./asserts/img/stash3.png" alt="git stash pop">
+                    </div>
+                </article>
+            </section>
+
+            <article class="m6a3">
+                <div>
+                <h5>$ git stash drop</h5>
+                </div>
+                <div>
+                    <p>Discard the changes from the top of the stash stack.</p>
+                </div>
+                <div>
+                    <img src="./asserts/img/stash4.png" alt="git stash drop">
+                </div>
+            </article>
         </section>
     </main>
     
